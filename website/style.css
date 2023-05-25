@@ -1,0 +1,176 @@
+button {
+    margin: 10px;
+}
+
+a {
+    margin-left: 2px; /* Adds left margin to create space */
+    /* or */
+    padding-left: 2px; /* Adds left padding to create space */
+}
+
+#text-container {
+    width: 200;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+#questionDebate h3{
+    font-size: 30px; /* Increase font size */
+    margin-bottom: 0; /* Remove default top margin */
+    text-align: center; /* Add text alignment */
+    display: flex; /* Add flexbox display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+#questionDebate p{
+    margin-bottom: 0; /* Remove default top margin */
+    text-align: center; /* Add text alignment */
+    display: flex; /* Add flexbox display */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+body {
+    background-color: #ffffff; /* Updated overall background color */
+    margin: 0; /* Remove default body margin */
+    padding: 20px;
+    font-family: 'Lato'; 
+}
+
+#prev-button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 10%;
+    top: 50%;
+    height: 200px;
+    width: 50px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+#next-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  right: 10%;
+  top: 50%;
+  height: 200px;
+  width: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+#button-sponsor {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+#sponsor-button {
+    height: 40px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#search-bar {
+    position: absolute;
+    top: 20px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+}
+  
+#button-img {
+    max-width: 50px;
+    max-height: 50px;
+}
+
+#search-input {
+    height: 35px;
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: grey;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  #search-bar-question {
+    margin-top: 50px; /* Add top margin for spacing */
+    text-align: center; /* Add text alignment */
+    display: flex; /* Add flexbox display */
+    justify-content: center; /* Center horizontally */
+    align-items: center;
+  }
+
+  #search-input-question {
+    height: 20px;
+    width: 850px;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: grey;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .user-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-name {
+    margin-right: auto;
+  }
+  
+  .like-button,
+  .reply-button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    width: 50px;
+  }
+  
+  .small-image {
+    width: 50px;
+    height: auto;
+  }
+  
+  .message-container {
+    line-height: 1.5; 
+    font-size: 20px;
+  }
+  .tabulated {
+    margin-left: 30px; /* Adjust the margin to create indentation */
+  }
+
+  .user-container.tabulated {
+    border-left: 2px solid #ccc; /* Add left border to highlight */
+  }
+  
+  .tabulated::before {
+    content: "";
+    display: block;
+    position: relative;
+    left: 50px; /* Position the grey line */
+    width: 2px;
+    height: 100%;
+    background-color: #ccc; /* Adjust the color as desired */
+  }
+
+
+  
