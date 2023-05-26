@@ -36,10 +36,10 @@ contract Tertulia {
     // Different medals awarded to users
     enum Medal {Default, Knowledgeable, Enlightened, Omniscient}
 
-    // User information {10 different subject medals}
+    // User information // {10 different subject medals}
     struct User {
-        Medal[10] medals;
-        uint[10] medals_votes;
+        // Medal[10] medals;
+        // uint[10] medals_votes;
         mapping(uint256 => UserDebate) userDebates;
     }
 
@@ -109,17 +109,29 @@ contract Tertulia {
     }
 
     Question[] questions;
+    address developer;
 
     constructor() {
-        questions.push(Question("Is social media more harmful than beneficial for society?", 0));
-        questions.push(Question("Should the death penalty be abolished?", 1));
+        developer = msg.sender;
     }
 
     // Interaction Functions
 
+    // Function to add a question 
+    // ONLY DEVELOPER
+    // IMPORTANT! Needs to be automated in the future
+    function addQuestion(string memory _question, uint _topic) public {
+        require(developer == msg.sender, "You are not the developer");
+        questions.push(Question(_question, _topic));
+    }
+
     // Function to create a debate 
+    // ONLY DEVELOPER
     // IMPORTANT! Needs to be automated in the future
     function createDebate () public {
+        
+        require(developer == msg.sender, "You are not the developer");
+        
         // Company fee: 10%
         uint fee = sponsors[sponsors.length - 1].value / 10;
         // Prize to be distributed
